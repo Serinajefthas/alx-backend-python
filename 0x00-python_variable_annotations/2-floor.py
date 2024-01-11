@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import math
+"""a typed annotated function"""
 
 
-def floor(n: float) -> floor:
+def floor(n: float) -> int:
     """Method that returns floor(largest int <= num) of float number"""
-    return math.floor(n)
+    return int(n)
