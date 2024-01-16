@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """Module to create async comprehension"""
 from typing import List
-import importlib
 
-async_generator = importlib.import_module('0-async_generator').async_generator
+async_generator = __import__("0-async_generator").async_generator
 
 
 async def async_comprehension() -> List[int]:

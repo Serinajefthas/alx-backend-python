@@ -5,7 +5,7 @@ from typing import Generator
 import random
 
 
-async def async_generator() -> int:
+async def async_generator() -> Generator[int, None, None]:
     """coroutine loops 10 times, async wait 1 sec then yield
     random number each time"""
     """yields random int every 1 second delay, 10 times"""
