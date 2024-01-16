@@ -13,6 +13,3 @@ async def async_generator() -> int:
         await asyncio.sleep(1)
         randnum = random.randint(0, 10)
         yield randnum
-    return randnum
-
-asyncio.run(async_generator)
