@@ -5,11 +5,10 @@ from typing import Generator
 import random
 
 
-async def async_generator() -> Generator[int, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     """coroutine loops 10 times, async wait 1 sec then yield
     random number each time"""
     """yields random int every 1 second delay, 10 times"""
-    for i in range(10):
+    for _ in range(10):
         await asyncio.sleep(1)
-        randnum = random.randint(0, 10)
-        yield randnum
+        yield random.uniform(0, 10)
